@@ -1,19 +1,10 @@
-
-
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,700italic&subset=cyrillic,latin)
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&subset=latin,cyrillic)
 @mixin clear()
 	&:after
 		content : '.'
 		display : table
 		clear : both
-
-@mixin bold()
-	font-weight : 700
-
-@mixin light()
-	font-weight : 300
-
-@mixin thin()
-	font-weight : 100
 
 *
 	box-sizing : border-box
@@ -21,6 +12,7 @@
 body
 	padding : 0
 	margin : 0
+	font-family: 'Roboto', sans-serif
 
 h1,h2,h3,h4,h5,h6
 	-webkit-margin-before : 0
@@ -31,5 +23,189 @@ h1,h2,h3,h4,h5,h6
 
 a 
 	text-decoration : none
+.bold
+	font-weight : 700
 
-			
+.light
+	font-weight : 300
+
+.bold_condensed
+	font-weight : 700
+	font-family : 'Roboto Condensed', sans-serif
+
+.light_condensed
+	font-weight : 300	
+	font-family : 'Roboto Condensed', sans-serif
+
+.red_text
+	color : #e23412
+.button
+	display : block
+	height : 59px
+	width : 430px
+	background : url(../img/bg_button.jpg)
+	background-size : contain
+	margin : auto
+	margin-top : 25px
+	border-radius : 10px
+	border-bottom : 2px solid #740003
+	font-size : 20pt
+	&:hover
+		background : url(../img/bg_button_hover.jpg)
+		text-decoration: none
+	.button_insert
+		display: block
+		width: 100%
+		&:before
+			content : '.'
+			display: block
+			height: 30px
+			width: 32px
+			background : url(../img/button_icon.png)
+			float : left
+			margin-right: 20px
+			margin-left: 70px
+			margin-top: 14px
+		.button_text
+			display : block
+			float : left
+			color : #fff
+			text-shadow : 1px 1px 1px #343434
+			padding-top: 5px
+			text-transform: uppercase
+			padding-top: 10px
+.content
+	width: 1230px
+	margin: auto
+
+.top_header
+	background : #e7f0f3
+	width: 100%
+	padding-top: 15px
+	padding-bottom: 40px
+	img[alt="logotype"]
+		float : left
+		margin-left: 15px
+	.slogan
+		padding-top: 10px
+		span 
+			display: block
+			width: 100%
+			text-align: center
+			font-size: 17pt
+	.contact_number
+		float : right
+		font-size: 16pt
+		margin-right: 15px
+		padding-top: 5px
+		font-family : 'Roboto Condensed', sans-serif
+		h6
+			font-size: 19pt
+		h5 
+			font-size: 12pt
+			text-align: right
+		a
+			color : #006cb1
+			border-bottom : 1px solid #006cb1
+			font-family : 'Roboto Condensed', sans-serif
+			&:hover
+				text-decoration: none
+
+nav
+	text-align : center 
+	ul 
+		list-style-type: none
+		display: inline-block
+		transform : translate(0%,-50%)
+		li
+			float: left
+			color : #fff
+			padding : 15px 21px
+			background : url(../img/menu.jpg)
+			background-size : contain
+			cursor: pointer
+			margin: 0
+			a 
+				color : #fff
+				font-size : 15pt
+				font-weight: bold
+				text-shadow : 1px 1px 1px rgba(0,0,0, .3)
+				&:hover
+					color : #fff
+					text-decoration: none
+			&:hover
+				background : #c12708
+		.first
+			border-top-left-radius : 25px
+			border-bottom-left-radius : 25px
+		.last
+			border-top-right-radius : 25px
+			border-bottom-right-radius : 25px
+
+
+#main
+	background : url(../img/bg_1.jpg) center top no-repeat
+	width: 100%
+	margin-top: -60px
+	height: 860px
+	//position: relative
+	img[alt="info"]
+		position: absolute
+		margin-top: 214px
+		margin-left: 100px
+	.headers
+		padding-top: 315px
+		padding-left: 340px
+		.header_text
+			width: 320px
+			float: left
+		.header_video
+			position: relative
+			float: right
+			padding-right: 130px
+			.video_wrap
+				position: relative
+			.play
+				position: absolute
+				top: 50%
+				left: 50%  
+				transform: translate(-50%, -50%)
+				width: 64px
+				height: 64px
+				background : url(../img/play.png) no-repeat
+				background-position: 0px 0px
+				cursor: pointer
+				&:hover
+					background-position: -64px 0px
+	.header_1
+		// background : rgba(215,49,17, .75)
+		width: 280px
+		color : #fff
+		text-align: left
+		background : rgba(215,49,17, .75)
+		padding: 5px 20px 5px 20px
+		font-size: 34pt
+	.header_2
+		width: 171px
+		color : #fff
+		text-align: left
+		background : rgba(215,49,17, .75)
+		padding: 5px 20px 5px 20px
+		font-size: 34pt
+	.margin_head
+		margin-bottom: 20px
+	.header_3
+		width: 280px
+		color : #fff
+		text-align: right
+		background : rgba(0,0,0, .75)
+		padding: 5px 20px 5px 20px	
+		font-size: 25pt
+	.header_4
+		width: 247px
+		color : #fff
+		text-align: right
+		background : rgba(0,0,0, .75)
+		padding: 5px 20px 5px 20px	
+		margin-left: 33px
+		font-size: 25pt

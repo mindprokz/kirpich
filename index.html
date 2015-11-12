@@ -8,7 +8,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Заголовок</title>
+	<title>Кирпичный завод</title>
 	<meta name="description" content="">
 	<!-- css normalize -->
 	<style>
@@ -30,8 +30,55 @@
 </head>
 
 <body>
+<header class="top_header">
+	<div class="content clear">
+		<img src="img/logo.png" alt="logotype">
+		<div class="contact_number">
+			<h6>+7 7172<span class="bold_condensed"> 518-913</span></h6>
+			<h6>+7 701 <span class="bold_condensed">349-06-5</span></h6>
+			<h5> <a href="#">brick-sales@mail.ru</a></h5>
+			</div>
+		<h3 class="slogan">
+			<span class="light">Силикатный кирпич в Астане</span>
+			<span class="red_text bold">Лучший кирпич - лучшая цена!</span>
+			</h3>
+		</div>
+	</header>
+<nav class="clear">
+	<div class="content">
+		<ul class="clear">
+			<li class="first"><a href="">Главная</a></li>
+			<li><a href="">Преимущества</a></li>
+			<li><a href="">Производство</a></li>
+			<li><a href="">Прайс-лист</a></li>
+			<li><a href="">Клиенты</a></li>
+			<li><a href="">Отзывы</a></li>
+			<li class="last"><a href="">Контакты</a></li>
+			</ul>		
+		</div>
+	</nav>
+	<!-- <a href="#" class="button"><span class="button_insert"><span class="button_text">Оставить заявку</span></span></a> -->
 	<!-- Здесь пишем код -->
-
+<div id="main">
+	<div class="content">
+		<img src="img/snoska.png" alt="info">
+		<div class="headers">
+			<div class="header_text">
+				<h3 class="header_1 bold_condensed">Силикатный</h3>
+				<h3 class="header_2 bold_condensed margin_head">кирпич</h3>
+				<h3 class="header_3 bold_condensed">Лучший кирпич -</h3>
+				<h3 class="header_4 bold_condensed">лучшая цена</h3>
+				</div>
+			<div class="header_video">
+				<div class="video_wrap">
+					<img src="img/player.jpg" alt="video">
+					<a href="#"><div class="play"></div></a>
+				</div>
+				<a href="#" class="button"><span class="button_insert"><span class="button_text">Оставить заявку</span></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
 <!--     Пример формы обратной связи          -->
 <!-- 
 	<div class="main"> 
@@ -65,7 +112,7 @@
 	//Header Styles (compress & paste to header after release)
 	var ms=document.createElement("link");
 	ms.rel="stylesheet";
-	ms.href="min/css/style.css";
+	ms.href="css/style.min.css";
 	document.getElementsByTagName("head")[0].appendChild(ms);
 </script>
 
@@ -78,6 +125,9 @@
 	{"src" : "js/common.js", "async" : false}
 	]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
 </script>
-
+<script>
+	var images = new Image();
+	images.src = 'img/bg_button_hover.jpg';
+</script>
 </body>
 </html>
