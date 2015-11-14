@@ -24,7 +24,7 @@ gulp.task('css', function () {
 
 // task for JS 
 gulp.task('js', function() {
-  return gulp.src('js/*.js')
+  return gulp.src('js/common.js')
     .pipe(uglify())
     .pipe(rename('common.min.js'))
     .pipe(gulp.dest('js/'));
