@@ -42,5 +42,21 @@ $(document).ready(function() {
 	};
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
-
 });
+	function initialize() {     
+	var myLatlng = new google.maps.LatLng(-34.397, 150.644);
+	var myOptions = {
+		zoom: 8,
+		center: myLatlng,
+		disableDefaultUI: true,
+		mapTypeId: google.maps.MapTypeId.ROADMAP
+	}
+	var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
+	var marker = new google.maps.Marker({
+		position: myLatlng,
+		map: map,
+		icon: 'img/marker_1.png',
+		title:"Hello World!" 
+	});
+};
+initialize();
