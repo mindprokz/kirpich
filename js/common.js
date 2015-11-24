@@ -12,7 +12,7 @@ $(document).ready(function() {
 	$('img').Upload_image('url'); // Загрузка картинок по data атрибуту
 
 	$(".fancybox_").fancybox();
-
+	
 	$('#main_video').fancybox({
 		'transitionIn' : 'elastic',
 		'autoScale' : false,
