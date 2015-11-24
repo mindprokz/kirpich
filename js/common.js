@@ -189,7 +189,6 @@ var _slider = {
 document.querySelector('.arrow_left').addEventListener('click',function () {
 	_slider.pos = 1;
 });
-
 // Нажатие на правую кнопку
 document.querySelector('.arrow_right').addEventListener('click',function () {
 	_slider.pos = 2;
