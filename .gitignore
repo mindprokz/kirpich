@@ -2,4 +2,4 @@
 *.ini
 *.DS_Store
 **/*.DS_Store
-node_modules/gulp-sass/
+node_modules/**/*
